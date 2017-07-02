@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FirstFragment">
+
+    <TextView
+        android:id="@+id/selection_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selection 1"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top|center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity edition"
+            android:textSize="20sp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"/>
+        <Button
+            android:id="@+id/have_account_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i_have_account"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            />
+        <Button
+            android:id="@+id/dont_have_account_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_now"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragment edition"
+            android:textSize="20sp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+        <Button
+            android:id="@+id/have_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/i_have_account"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            />
+        <Button
+            android:id="@+id/dont_have_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_now"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            />
+    </LinearLayout>
+</FrameLayout>
